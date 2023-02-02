@@ -17,6 +17,7 @@ app.get('/', (_, res) => {
 });
 
 app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/products', require('./routes/productRoutes'));
 
 app.use(errorHandler);
 
